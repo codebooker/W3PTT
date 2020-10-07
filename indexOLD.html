@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>W3PTT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <link href="images/CrabOnly2.png" rel="icon" type="image/x-icon" />
+    <meta name="Description" content="The Personal Website Of W3PTT">
+    <meta name="Keywords" content="W3PTT">
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="The Personal Website Of W3PTT" />
+    <meta property="og:url" content="https://w3ptt.com/" />
+    <meta property="og:title" content="W3PTT Personal Website" />
+    <!-- Chrome, Firefox OS, Opera and Vivaldi -->
+    <meta name="theme-color" content="#d40000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#d40000">
+    <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /> </noscript>
+</head>
+
+<body class="is-loading">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Main -->
+        <section id="main">
+            <header>
+                <br> <span class="avatar"><img style="max-width:300px;" src="images/CrabOnly.png" alt="" /></span>
+                <h1>W3PTT</h1>
+            </header>
+            <footer>
+                <ul class="icons">
+                    <li><a title="Click For My Email Address" href="https://mailhide.io/e/x3QOk" class="fa-envelope-o">Email</a></li>
+                    <li><a href="https://www.qrz.com/db/W3PTT" title="Click For My QRZ Profile" class="fa-info">QRZ</a></li>
+                    <li><a href="https://zello.com/users/k/hoPFs" title="Click For My Zello Profile" class="fa-mobile">Zello</a></li>
+                </ul>
+                <h6>&copy; Copyright 2020, Specx Technology Services</h6>
+            </footer>
+        </section><br>
+    </div>
+    <!-- Disabled Scripts -->
+    <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]
+    <script>
+        function showqem() {
+            id = e('qem');
+            var cem = qmail;
+            var cl = new String('');
+            var dem = new String('');
+            for (i = cem.length - 1; i > 0; i--) {
+                var c = cem.charAt(i);
+                if (c != '!') {
+                    cl = cl.concat(c);
+                } else {
+                    break;
+                }
+            }
+            i--;
+            for (x = 0; x < cl; x++) {
+                dem = dem.concat(cem.charAt(i));
+                i -= 2;
+            }
+            id.innerHTML = '<a href="mailto:' + dem + '" id="eml">' + dem + '</a>';
+            var eml = e('eml');
+            id.onclick = eml.onclick;
+            id.onmouseover = eml.onmouseover;
+        }
+    </script>-->
+    <script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function() {
+                document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+            });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+    </script>
+</body>
+
+</html>

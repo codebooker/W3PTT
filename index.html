@@ -1,8 +1,8 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>W3PTT</title>
+    <title>W3PTT - Home</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link href="images/CrabOnly2.png" rel="icon" type="image/x-icon" />
@@ -16,67 +16,83 @@
     <meta name="theme-color" content="#d40000">
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#d40000">
-    <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" /> </noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="/assets/css/style.css">
+
 </head>
 
-<body class="is-loading">
-    <!-- Wrapper -->
-    <div id="wrapper">
-        <!-- Main -->
-        <section id="main">
-            <header>
-                <br> <span class="avatar"><img style="max-width:300px;" src="images/CrabOnly.png" alt="" /></span>
-                <h1>W3PTT</h1>
-            </header>
-            <footer>
-                <ul class="icons">
-                    <li><a title="Click For My Email Address" href="https://mailhide.io/e/x3QOk" class="fa-envelope-o">Email</a></li>
-                    <li><a href="https://www.qrz.com/db/W3PTT" title="Click For My QRZ Profile" class="fa-info">QRZ</a></li>
-                    <li><a href="https://zello.com/users/k/hoPFs" title="Click For My Zello Profile" class="fa-mobile">Zello</a></li>
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="navbar">
+        <nav>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a data-position="right" data-tooltip="Menu" href="#" data-target="slide-out" class="sidenav-trigger show-on-large tooltipped"><i class="material-icons">menu</i></a></li>
+                    <li><a class="brand-logo center" data-target="slide-out" class="sidenav-trigger" href="#">W3PTT</a></li>
                 </ul>
-                <h6>&copy; Copyright 2020, Specx Technology Services</h6>
-            </footer>
-        </section><br>
+            </div>
+        </nav>
     </div>
-    <!-- Disabled Scripts -->
-    <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]
+
+    <ul id="slide-out" class="sidenav">
+        <li><a class="waves-effect" href="index.html">Homepage</a></li>
+
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header">DMR Netwatches<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a class="waves-effect" href="interstate1.html">Interstate Net 1</a></li>
+                            <li><a class="waves-effect" href="interstate2.html">Interstate Net 2</a></li>
+                            <li><a class="waves-effect" href="k4usd.html">K4USD Net</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col s12 l4 offset-l4 m12">
+                    <div class="card grey lighten-1 white-text">
+                        <div class="card-content valign-wrapper">
+                            <div class="card-text center">
+                                <img class="responsive-img" src="images/CrabOnly2.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4 offset-l4 m12">
+                    <div class="card grey lighten-1 white-text">
+                        <div class="card-content valign-wrapper">
+                            <div class="card-text center">
+                                <a data-position="left" data-tooltip="Click For My Email Address" href="https://mailhide.io/e/x3QOk" class="waves-effect red waves-light btn-large tooltipped"><i class="material-icons">contact_mail</i></a>
+                                <a data-position="bottom" data-tooltip="Click For My QRZ Profile" href="https://www.qrz.com/db/W3PTT" class="waves-effect red waves-light btn-large tooltipped"><i class="material-icons">import_contacts</i></a>
+                                <a data-position="right" data-tooltip="Click For My Zello Profile" href="https://zello.com/users/k/hoPFs" class="waves-effect red waves-light btn-large tooltipped"><i class="material-icons">phone_android</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        function showqem() {
-            id = e('qem');
-            var cem = qmail;
-            var cl = new String('');
-            var dem = new String('');
-            for (i = cem.length - 1; i > 0; i--) {
-                var c = cem.charAt(i);
-                if (c != '!') {
-                    cl = cl.concat(c);
-                } else {
-                    break;
-                }
-            }
-            i--;
-            for (x = 0; x < cl; x++) {
-                dem = dem.concat(cem.charAt(i));
-                i -= 2;
-            }
-            id.innerHTML = '<a href="mailto:' + dem + '" id="eml">' + dem + '</a>';
-            var eml = e('eml');
-            id.onclick = eml.onclick;
-            id.onmouseover = eml.onmouseover;
-        }
-    </script>-->
-    <script>
-        if ('addEventListener' in window) {
-            window.addEventListener('load', function() {
-                document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+        M.AutoInit();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'left'
             });
-            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-        }
+        });
     </script>
 </body>
 
