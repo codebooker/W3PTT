@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Materialize - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="navbar">
+        <nav>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a></li>
+                    <li><a class="title" data-target="slide-out" class="sidenav-trigger" href="#">Dashboard</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#!"><i class="material-icons">apps</i></a></li>
+                    <li><a href="#!"><i class="material-icons">settings</i></a></li>
+                    <li><a href="#!"><i class="material-icons">help</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/office.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                <a href="#name"><span class="white-text name">John Doe</span></a>
+                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card blue white-text">
+                        <div class="card-content valign-wrapper">
+                            <div class="card-text">
+                                <h6>25%</h6>
+                                <p>Server load</p>
+                            </div>
+                            <div class="card-icon"><i class="material-icons medium valign">pie_chart</i></div>
+                        </div>
+                        <div class="card-action"><a href="#">View report</a></div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card blue white-text">
+                        <div class="card-content valign-wrapper">
+                            <div class="card-text">
+                                <h6>156</h6>
+                                <p>Users online</p>
+                            </div>
+                            <div class="card-icon"><i class="material-icons medium valign">check_circle</i></div>
+                        </div>
+                        <div class="card-action"><a href="#">View report</a></div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card blue white-text">
+                        <div class="card-content valign-wrapper">
+                            <div class="card-text">
+                                <h6>50</h6>
+                                <p>Broken links</p>
+                            </div>
+                            <div class="card-icon"><i class="material-icons medium valign">build</i></div>
+                        </div>
+                        <div class="card-action"><a href="#">View report</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m8">
+                    <div class="card">
+                        <table class="bordered highlight">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">TODO List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Upgrade to SSD harddisks</td>
+                                </tr>
+                                <tr>
+                                    <td>Pay server invoice</td>
+                                </tr>
+                                <tr>
+                                    <td>Upgrade to SSD harddisks</td>
+                                </tr>
+                                <tr>
+                                    <td>Pay server invoice</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+</body>
+
+</html>
